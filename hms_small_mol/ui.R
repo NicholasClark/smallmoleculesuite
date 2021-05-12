@@ -8,6 +8,7 @@ shinyUI(
     title = "HMS-LINCS Small Molecule Suite Applications",
     shinyjs::useShinyjs(),
     suppressDependencies("bootstrap"),
+    tags$head(includeScript("google-analytics.js")),
     # Fix for mobile viewing
     tags$meta(name="viewport", content="width=device-width, initial-scale=1.0"),
     # CSS for sizing of data table search boxes
@@ -51,9 +52,9 @@ shinyUI(
         div(class = "ui center aligned container",
   a(class = "item", img(class = "logo", src = "dcic.png"),
     href = "http://lincs-dcic.org/"),
-  a(class = "item", "SelectivitySelectR", href = "https://labsyspharm.shinyapps.io/SelectivitySelectR/", style = "font-size: 16px; padding: 5px; margin: 0px;"),
-  a(class = "item", "SimilaritySelectR", href = "https://labsyspharm.shinyapps.io/SimilaritySelectR/", style = "font-size: 16px; padding: 5px; margin: 0px;"),
-  a(class = "item", "LibraryR", href = "https://labsyspharm.shinyapps.io/LibraryR/", style = "font-size: 16px; padding: 5px; margin: 0px;"),
+  a(class = "item", "SelectivitySelectR", href = "/SelectivitySelectR/", style = "font-size: 16px; padding: 5px; margin: 0px;"),
+  a(class = "item", "SimilaritySelectR", href = "/SimilaritySelectR/", style = "font-size: 16px; padding: 5px; margin: 0px;"),
+  a(class = "item", "LibraryR", href = "/LibraryR/", style = "font-size: 16px; padding: 5px; margin: 0px;"),
   a(class = "item", img(class = "logo", src = "logo_harvard_150.png"),
     href = "http://sorger.med.harvard.edu" )
         )
